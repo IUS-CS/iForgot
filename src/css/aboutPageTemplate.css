@@ -15,14 +15,14 @@ body {
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
-	height: 1000px;
+	height: 559px;
 	background-color: #FFFFFF;
 	text-align: center;
 }
 /* Navigation */
 header {
 	width: 100%;
-	height: 5%;
+	height: 8%;
 	background-color: #52bad5;
 	border-bottom: 1px solid #2C9AB7;
 }
@@ -76,12 +76,9 @@ ul li:hover a {
 .hero {
 	background-color: #B3B3B3;
 	padding-top: 15px;
-	padding-bottom: 30px;
-}
-.container #hero img {
+	padding-bottom: 15px;
 	text-align: center;
 }
-
 .light {
 	font-weight: bold;
 	color: #717070;
@@ -125,9 +122,8 @@ ul li:hover a {
 	background-color: #FFFFFF;
 	/* [disabled]min-width: 400px;
 */
-	padding-bottom: 35px;
 	padding-top: 0px;
-	margin-top: -10px;
+	margin-top: -5px;
 	margin-bottom: 0px;
 }
 .thumbnail {
@@ -154,31 +150,31 @@ ul li:hover a {
 .banner {
 	background-color: #2D9AB7;
 	background-image: url(../images/parallax.png);
-	height: 400px;
+	height: 160px;
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .parallax {
 	color: #FFFFFF;
-	text-align: right;
-	padding-right: 100px;
-	padding-top: 110px;
+	text-align: center;
+	padding-top: 15px;
 	letter-spacing: 2px;
 	margin-top: 0px;
+	padding-left: 20px;
 }
 .parallax_description {
 	color: #FFFFFF;
-	text-align: right;
-	padding-right: 100px;
-	width: 30%;
-	float: right;
+	text-align: center;
+	width: 99%;
+	float: none;
 	font-weight: lighter;
 	line-height: 23px;
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: 0px;
+	padding-left: 0px;
 }
 /* More info */
 footer {
@@ -252,8 +248,8 @@ footer .footer_column p {
 }
 .footer_banner {
 	background-color: #B3B3B3;
-	padding-top: 15px;
-	padding-bottom: 15PX;
+	padding-top: 60px;
+	padding-bottom: 60PX;
 	margin-bottom: 0px;
 	background-image: url(../images/pattern.png);
 	background-repeat: repeat;
@@ -479,6 +475,6 @@ nav ul li {
 }
 .banner {
 	margin-top: 0px;
-	padding-bottom: 0px;
+	padding-top: 0px;
 }
 }
