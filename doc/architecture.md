@@ -24,4 +24,4 @@
 
 ## Model of Website
 
-![architecture](https://raw.githubusercontent.com/IUS-CS/iForgot/master/HackStreetBoyzLogo.PNG)
+![architecture](https://raw.githubusercontent.com/IUS-CS/iForgot/master/architecturediagram.PNG)
