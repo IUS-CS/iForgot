@@ -24,4 +24,4 @@
 
 ## Model of Website
 
-![alt text] https://github.com/IUS-CS/iForgot/blob/sprint2/architecturediagram.png?raw=true
+![architecture](https://raw.githubusercontent.com/IUS-CS/iForgot/master/HackStreetBoyzLogo.PNG)
