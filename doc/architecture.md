@@ -21,3 +21,7 @@
 * A forgot password and create account button will also be added.
 * Links to About Us page will be included.
 * Login will call backend to authenticate the user and load the settings.
+
+## Model of Website
+
+![alt text] https://github.com/IUS-CS/iForgot/blob/sprint2/architecturediagram.png?raw=true
