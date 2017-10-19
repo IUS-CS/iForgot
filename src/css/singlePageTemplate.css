@@ -144,6 +144,39 @@ body {font-family: Verdana, sans-serif;}
     background: #1abc9c;
     color: white !important
 }
+
+/*Layout for Calendar*/
+#calendar-container{
+	padding-top: 30px;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 70px;
+	width: 100%;
+	height: 180px;
+	text-align: center;
+	border: 1px solid #eee;
+	border-radius: 10px;
+	font-size: 16px;
+	font-family: Verdana, sans-serif;
+	background-image: -webkit-linear-gradient(90deg,rgba(39,179,124,1.00) 0%,rgba(211,211,211,1.00) 100%);
+	background-image: -moz-linear-gradient(90deg,rgba(39,179,124,1.00) 0%,rgba(211,211,211,1.00) 100%);
+	background-image: -o-linear-gradient(90deg,rgba(39,179,124,1.00) 0%,rgba(211,211,211,1.00) 100%);
+	background-image: linear-gradient(0deg,rgba(39,179,124,1.00) 0%,rgba(211,211,211,1.00) 100%);
+	background-image: 
+}
+
+#calendar-container>div{
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+#calendar-month-year{
+    margin: 5px;
+}
+
+#calendar-dates>table>tr>td{
+    padding: 5px;
+}
 /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
