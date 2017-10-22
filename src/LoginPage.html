@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>About Us</title>
+<title>Login</title>
 <link href="css/aboutPageTemplate.css" rel="stylesheet" type="text/css">
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
 <script>var __adobewebfontsappname__="dreamweaver"</script>
@@ -21,7 +21,6 @@
     <nav>
       <ul>
         <li><a href="Organizer.html">HOME</a></li>
-		<li><a href="LoginPage.html">LOGIN</a></li>
       </ul>
     </nav>
   </header>
@@ -30,24 +29,25 @@
     <img src="https://raw.githubusercontent.com/IUS-CS/iForgot/master/HackStreetBoyzLogo.PNG" width="544" height="148" alt="TeamLogo"/>
 	<h2 class="hero_header">The Team That <span class="light">Simplifies Life</span></h2>
   </section>
-  <!-- About Section -->
-  <!-- Stats Gallery Section -->
-  <div class="gallery">
-    <div class="thumbnail">
-      <p> </p>
-    </div>
-    
-</div>
-  <!-- Parallax Section -->
-  <section class="banner">
-    <h2 class="parallax">About Us</h2>
-    <p class="parallax_description">Hack Street Boyz is an organization created by group of IU Southeast students. Founded in 2017, we are a young group with big aspirations. Our most recent project is iForgot, which is created by students for students. It aims to organize workload via a responsive calendar and a to-do list.</p>
-  </section>
-  <!-- More Info Section -->
-  <footer> </footer>
+ <link href="css/loginPage.css" rel="stylesheet" type="text/css">
+ <form action="/action_page.php">
+ 
+  <div class="container">
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <input type="checkbox" checked="checked"> Remember me </input>
+  </div>
+</form>
+ 
   <!-- Copyrights Section -->
   <div class="copyright">&copy;2017 - <strong>All Rights Reserved</strong></div>
 </div>
 <!-- Main Container Ends -->
 </body>
 </html>
+
