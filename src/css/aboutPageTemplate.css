@@ -15,7 +15,7 @@ body {
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
-	height: 559px;
+	height: 560px;
 	background-color: #FFFFFF;
 	text-align: center;
 }
@@ -93,7 +93,7 @@ ul li:hover a {
 }
 /* About Section */
 .text_column {
-	width: 29%;
+	width: 30%;
 	text-align: justify;
 	font-weight: lighter;
 	line-height: 25px;
