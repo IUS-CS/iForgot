@@ -25,8 +25,9 @@ function get_calendar(day_no, days){
     
     //create 2nd row
     tr = document.createElement('tr');
-    for(var j = 0; j <= 6; j++){
-        if(j == day_no){
+	var j;
+    for(j = 0; j <= 6; j++){
+        if(j === day_no){
             break;
         }
         var td = document.createElement('td');
@@ -35,7 +36,7 @@ function get_calendar(day_no, days){
     }
     
     var count = 1;
-    for(var k = 0; k <= 6 ; k++){
+    for(; j <= 6; j++){
         var td = document.createElement('td');
         td.innerHTML = count;
         count++;
