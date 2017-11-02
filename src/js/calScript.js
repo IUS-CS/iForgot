@@ -123,6 +123,7 @@ var addTask = function() {
    taskInput.value = "";   
  }
 
+
 // Edit an existing task
 var editTask = function() {
   console.log("Edit Task...");
@@ -201,13 +202,8 @@ var ajaxRequest = function() {
 }
 
 // Set the click handler to the addTask function
-try{
 addButton.addEventListener("click", addTask);
 addButton.addEventListener("click", ajaxRequest);
-}
-catch(err){
-}
-
 
 // Cycle over the incompleteTaskHolder ul list items
 for(var i = 0; i <  incompleteTasksHolder.children.length; i++) {
