@@ -56,11 +56,22 @@
 </div>
 </b>
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="AboutUs.html">About</a>
-  <a href="#">Contact</a>
+<!-- To Do List -->
+<div class="container-todo">
+  <h2>To-Do List</h2>
+  <p>
+	<label for="new-task">Add Item</label><input id="new-task" type="text"><button>Add</button>
+  </p>
+
+  <h3>To-Do</h3>
+  <ul id="incomplete-tasks">
+  </ul>
+
+  <h3>Completed</h3>
+  <ul id="completed-tasks">
+  </ul>
 </div>
 
+    <script type="text/javascript" src="js/calScript.js"></script>
 </body>
 </html>
