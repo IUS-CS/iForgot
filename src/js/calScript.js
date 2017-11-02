@@ -113,15 +113,15 @@ var createNewTaskElement = function(taskString) {
 
 // Add a new task
 var addTask = function() {
-  console.log("Add task...");
-  //Create a new list item with the text from #new-task:
-  var listItem = createNewTaskElement(taskInput.value);
-  //Append listItem to incompleteTasksHolder
-  incompleteTasksHolder.appendChild(listItem);
-  bindTaskEvents(listItem, taskCompleted);  
-  
-  taskInput.value = "";   
-}
+   console.log("Add task...");
+   //Create a new list item with the text from #new-task:
+   var listItem = createNewTaskElement(taskInput.value);
+   //Append listItem to incompleteTasksHolder
+   incompleteTasksHolder.appendChild(listItem);
+   bindTaskEvents(listItem, taskCompleted);  
+   
+   taskInput.value = "";   
+ }
 
 // Edit an existing task
 var editTask = function() {
@@ -201,9 +201,12 @@ var ajaxRequest = function() {
 }
 
 // Set the click handler to the addTask function
-//addButton.onclick = addTask;
+try{
 addButton.addEventListener("click", addTask);
 addButton.addEventListener("click", ajaxRequest);
+}
+catch(err){
+}
 
 
 // Cycle over the incompleteTaskHolder ul list items

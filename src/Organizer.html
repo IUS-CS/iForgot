@@ -29,37 +29,15 @@
         ref.parentNode.insertBefore(js, ref);
         }(document));
 
-        function login() {
-            FB.login(function(response) {
-
-            // handle the response
-            console.log("Response goes here!");
-
-            });          
-        }
-
-        function logout() {
-            FB.logout(function(response) {
-              
-            });
-        }
-
-        var status = FB.getLoginStatus();
-
-        console.log(status);
-
-function logout() {
-            FB.logout(function(response) {
-              
-            });
-        }
 function logoutSure() {
     if (confirm("Are you sure you want to logout?") == true) {
 		window.location = "http://iforgotorganizer.xyz/LoginPage.html";
+		javascript:logout();
     }
-	javascript:logout();
+	
 }
 </script>
+
 <!-- Main Container -->
 <div class="container"> 
   <!-- Navigation -->
@@ -70,11 +48,12 @@ function logoutSure() {
       <ul>
         <li> <a href="LoginPage.html">LOGIN</a></li>
         <li><a href="AboutUs.html">ABOUT US</a></li>
-		<li><button onclick="javascript:logoutSure();">LOGOUT</button></li>
+		<li> <a href=javascript:logoutSure();> LOGOUT </a></li>
       </ul>
     </nav>
     
 </header>
+
 <div class="month"> 
   <ul>
 	  <li class="prev">&#10094;</li>
@@ -110,7 +89,8 @@ function logoutSure() {
 <div class="container-todo">
   <h2>To-Do List</h2>
   <p>
-	<label for="new-task">Add Item</label><input id="new-task" type="text"><button>Add</button>
+	<label for="new-task">Add Item</label><input id="new-task" type="text">
+	<button type="button" id="addButton">Add</button>
   </p>
 
   <h3>To-Do</h3>
@@ -121,7 +101,6 @@ function logoutSure() {
   <ul id="completed-tasks">
   </ul>
 </div>
-
-    <script type="text/javascript" src="js/calScript.js"></script>
+<script type="text/javascript" src="js/calScript.js"></script>
 </body>
 </html>
