@@ -5,7 +5,7 @@
 + The organizer will be tailored to each user and will show upcoming due dates.
 
 ## Implementation
-The user will be prompted to a login screen, showing a login with facebook button. When logged in, the user will be prompted to the main screen showing a calendar with the "to-do" information. When one clicks on a specific day, the information for that day will pop up. The to-do list will be editable. If time allows, the group will set up a e-mail remiders page.
+The user will be prompted to a login screen, showing a facebook login button. When logged in, the user will be prompted to the main screen showing a calendar with the "to-do" information. When one clicks on a specific day, the information for that day will pop up. The to-do list will be editable. If time allows, the group will set up a e-mail remiders page.
 
 ## Features
 The front-end code will be using HTML with CSS. The back-end will be done with Python using PyCharm.
