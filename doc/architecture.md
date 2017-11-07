@@ -17,8 +17,7 @@
 
 ## Login Page
 
-* This page will have a E-mail and Password textbox and a login button.
-* A forgot password and create account button will also be added.
+* This page will have a Facebook Login button.
 * Links to About Us page will be included.
 * Login will call backend to authenticate the user and load the settings.
 
