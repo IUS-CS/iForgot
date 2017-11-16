@@ -55,6 +55,7 @@ nav ul li {
 	font-weight: bold;
 	transition: all 0.3s linear;
 }
+/* List Elements */
 ul li a {
 	color: #FFFFFF;
 	text-decoration: none;
@@ -96,18 +97,6 @@ body {font-family: Verdana, sans-serif;}
 	text-align: center;
 }
 
-/* Previous button inside month header */
-.month .prev {
-    float: left;
-    padding-top: 10px;
-}
-
-/* Next button */
-.month .next {
-    float: right;
-    padding-top: 10px;
-}
-
 /* Weekdays (Mon-Sun) */
 .weekdays {
     margin: 0;
@@ -133,20 +122,21 @@ body {font-family: Verdana, sans-serif;}
     padding: 0;
     margin: 0;
 }
-
+/* Month */
 #calendar-month{
     margin: 5px;
 }
-
+/* Year */
 #calendar-year{
 	margin: 5px;
 }
+/* Weeks (rows) */
 #calendar-dates>table>tr{
 	padding-left: 0;
 	margin-bottom: 50px;
 	height: 30px;
 }
-
+/* Days */
 #calendar-dates>table>tr>td{
 	color: #000000;
     width: 1%;
@@ -178,7 +168,7 @@ body {font-family: Verdana, sans-serif;}
 /* To-Do List */
 .container-todo {
   display: block;
-  width: 400px;
+  width: 47%;
   padding-left: 40px;
   margin: auto 0;
 }
@@ -296,6 +286,4 @@ label[for='new-task'] {
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-}
-
 }

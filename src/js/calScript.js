@@ -1,29 +1,31 @@
 window.onload = function(){
+	//Get Date
     var d = new Date();
     var month_name = ['January','February','March','April','May','June','July','August','September','October','November','December'];
     var month = d.getMonth();   //10
     var year = d.getFullYear(); //2017
-    var first_date = month_name[month] + " " + 1 + " " + year;
-    //October 1 2017
-    var tmp = new Date(first_date).toDateString();
-    //Sun Oct 01 2017 ...
+    var first_date = month_name[month] + " " + 1 + " " + year; //October 1 2017
+    var tmp = new Date(first_date).toDateString(); //Sun Oct 01 2017 ...
     var first_day = tmp.substring(0, 3);    //Sun
     var day_name = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
     var day_no = day_name.indexOf(first_day);   //1
     var days = new Date(year, month + 1, 0).getDate();    //31
     //Tue Oct 31 2014 ...
     var calendar = get_calendar(day_no, days);
-
+	
+	//Get Elements
     document.getElementById("calendar-month").innerHTML = month_name[month];
 	document.getElementById("calendar-year").innerHTML = year;
     document.getElementById("calendar-dates").appendChild(calendar);
 }
 
+//Create Calendar Weeks and Days
 function get_calendar(day_no, days){
     var table = document.createElement('table');
     var tr = document.createElement('tr');
     
-    //create 2nd row
+    //create 1st row with white spaces
+	//when the whitespaces end jump to another loop
     tr = document.createElement('tr');
 	var j;
     for(j = 0; j <= 6; j++){
@@ -35,6 +37,7 @@ function get_calendar(day_no, days){
         tr.appendChild(td);
     }
     
+	//create the rest of the first row
     var count = 1;
     for(; j <= 6; j++){
         var td = document.createElement('td');
@@ -63,10 +66,6 @@ function get_calendar(day_no, days){
 }
 
 //Create To-Do List
-
-// Problem: User interaction doesn't provide desired results.
-// Solution: Add interactivity so the user can manage daily tasks
-
 var taskInput = document.getElementById("new-task");
 var addButton = document.getElementsByTagName("button")[0];
 var incompleteTasksHolder = document.getElementById("incomplete-tasks");
@@ -101,7 +100,7 @@ var createNewTaskElement = function(taskString) {
   label.innerText = taskString;
   
     
-      // each element needs appending
+      // Each element needs appending
   listItem.appendChild(checkBox);
   listItem.appendChild(label);
   listItem.appendChild(editInput);
