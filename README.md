@@ -1,7 +1,7 @@
 Introduction
 ------------
 
-The iForgot website displays a calandar with a side view to do list.  When a date on the calandar is clicked the tasks for the day will appear on the to do list to the right of the calandar.  When a date is selected tasks can be added or removed from the list on the side.
+The iForgot website displays a dynamic calandar with an interactive to-do list below. The calendar will update the dates each month. The to-do list allows a user to add, edit, delete, and complete tasks. 
 
 Requirements
 ------------
@@ -18,7 +18,7 @@ When the webpage is first opened the page will present a login screen.  The logi
 Use
 ---
 
-The website's homepage displays the calandar for the user currently logged in with the selected date's tasks to the right side of the calandar.  Clicking add at the bottom of the page will display a prompt to fill in information on the new task.  Clicking remove will remove the selected task from the date.  Selecting a different date on the calandar will replace tasks displayed at the right with the set of tasks for the newly selected date.
+The website's homepage displays the calandar for the user currently logged in with the selected date's tasks below the calandar. The user will input a task into the add field. Clicking add next to the field will fill in information on the new task and put the task into the to-do field. The edit field will allow one to modify the task. Clicking delete will remove the selected task from the date. The checkbox will automatically put the task into completed and score the text out.
 
 Maintainers
 -----------

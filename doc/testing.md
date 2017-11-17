@@ -11,4 +11,10 @@
 
 * Check incomplete tasks
 
+* Check the edit function
+
+* Test the delete function
+
+* Test the checkbox/completed field
+
 ## More testing will be done with the backend code using unit testing.
