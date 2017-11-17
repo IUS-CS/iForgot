@@ -9,3 +9,14 @@ The user will be prompted to a login screen, showing a facebook login button. Wh
 
 ## Features
 The front-end code will be using HTML with CSS. The back-end will be done with Python using PyCharm.
+
+## Estimations
+| Tasks               | Estimation | Actual | Developer |
+|---------------------|:----------:|:------:|-----------|
+| Initial Login Page  |      2     |    1   | Chase     |
+| Live Calendar       |      3     |    7   | Nick      |
+| Login with Facebook |      5     |    7   | Steven    |
+| Document Updates    |      3     |    3   | Chase     |
+| To-Do List          |      7     |   10   | Nick      |
+| Back End            |     10     |   20   | Steven    |
+| Testing             |      5     |    6   | Nick      |
