@@ -7,7 +7,28 @@
 <title>iForgot</title>
 <link href="css/Organizer.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="js/calScript.js"></script>
+<style>
+.alert {
+    padding: 20px;
+    background-color: #008000;
+    color: white;
+}
 
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+</style>
 </head>
 <body>
 
@@ -33,7 +54,10 @@
 
 function logoutSure() {
     window.location = "http://iforgotorganizer.xyz/LoginPage.html";
-    javascript:logout();
+    FB.logout(function(response) {
+   // Person is now logged out
+});
+    
 }
 </script>
 
@@ -83,6 +107,10 @@ function logoutSure() {
 </b>
 
 <!-- To Do List -->
+<div class="alert">
+  <span class="closebtn" onclick="reload(); this.parentElement.style.display='none';">&times;</span> 
+  Welcome back! Thanks for using iForgot.
+</div>
 <div class="container-todo">
   <h2 id="todo-Header">To-Do List</h2>
   
@@ -104,7 +132,6 @@ function logoutSure() {
 </div>
 </div>
 <button type="button" id="saveButton" onclick="save()">Save</button>
-<button type="button" id="reloadButton" onclick="reload()">Reload</button>
 <script>
 function save() {
     var data = document.getElementById('incomplete-tasks').innerHTML;
@@ -112,6 +139,7 @@ function save() {
 }
 function reload(){
     document.getElementById('incomplete-tasks').innerHTML = localStorage.getItem('ToDos');
+    
 }
 </script>
 <script type="text/javascript" src="js/calScript.js"></script>
