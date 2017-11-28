@@ -19,7 +19,7 @@
 
 * This page will have a Facebook Login button.
 * Links to About Us page will be included.
-* Login will call backend to authenticate the user and load the settings.
+* Login will call back end to authenticate the user and load the settings.
 
 ## Model of Website
 

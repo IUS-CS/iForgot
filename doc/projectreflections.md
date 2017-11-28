@@ -8,8 +8,8 @@ added on to it and made it more interactive.
 
 ## Nick's part
 
-### Nick's job throughout the project was to work on some documentation and the About Page. He also made the To-Do list and all
-that came with that including the Javascript for it to actually work. He also improved on the calendar and helped with the css for multiple pages.
+### Nick's job throughout the project was to work on some documentation and the About Page.
+He also made the interactive To-Do list and all that came with that, including the Javascript for it to actually work. He also improved on the calendar and helped with the css for multiple pages. The calendar was updated and made dynamic in the sense that it will update every month.
 
 ## Chase's part
 
