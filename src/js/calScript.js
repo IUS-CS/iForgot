@@ -1,5 +1,6 @@
+
 window.onload = function(){
-	//Get Date
+  //Get Date
     var d = new Date();
     var month_name = ['January','February','March','April','May','June','July','August','September','October','November','December'];
     var month = d.getMonth();   //10
@@ -12,10 +13,10 @@ window.onload = function(){
     var days = new Date(year, month + 1, 0).getDate();    //31
     //Tue Oct 31 2014 ...
     var calendar = get_calendar(day_no, days);
-	
-	//Get Elements
+  
+  //Get Elements
     document.getElementById("calendar-month").innerHTML = month_name[month];
-	document.getElementById("calendar-year").innerHTML = year;
+  document.getElementById("calendar-year").innerHTML = year;
     document.getElementById("calendar-dates").appendChild(calendar);
 }
 
@@ -25,9 +26,9 @@ function get_calendar(day_no, days){
     var tr = document.createElement('tr');
     
     //create 1st row with white spaces
-	//when the whitespaces end jump to another loop
+  //when the whitespaces end jump to another loop
     tr = document.createElement('tr');
-	var j;
+  var j;
     for(j = 0; j <= 6; j++){
         if(j === day_no){
             break;
@@ -37,7 +38,7 @@ function get_calendar(day_no, days){
         tr.appendChild(td);
     }
     
-	//create the rest of the first row
+  //create the rest of the first row
     var count = 1;
     for(; j <= 6; j++){
         var td = document.createElement('td');
@@ -119,10 +120,9 @@ var addTask = function() {
    incompleteTasksHolder.appendChild(listItem);
    bindTaskEvents(listItem, taskCompleted);  
    
-   taskInput.value = "";   
+   taskInput.value = "";
+        save();
  }
-
-
 // Edit an existing task
 var editTask = function() {
   console.log("Edit Task...");
@@ -203,6 +203,7 @@ var ajaxRequest = function() {
 // Set the click handler to the addTask function
 addButton.addEventListener("click", addTask);
 addButton.addEventListener("click", ajaxRequest);
+
 
 // Cycle over the incompleteTaskHolder ul list items
 for(var i = 0; i <  incompleteTasksHolder.children.length; i++) {
