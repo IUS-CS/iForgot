@@ -18,9 +18,8 @@
       appId            : '149476318999373',
       autoLogAppEvents : true,
       xfbml            : true,
-      version          : 'v2.10'
+      version          : 'v2.11'
     });
-    FB.AppEvents.logPageView();
   };
 
   (function(d, s, id){
@@ -30,26 +29,36 @@
      js.src = "https://connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
-FB.getLoginStatus(function(response) {
-  if (response.status === 'connected') {
-    // the user is logged in and has authenticated your
-    // app, and response.authResponse supplies
-    // the user's ID, a valid access token, a signed
-    // request, and the time the access token 
-    // and signed request each expire
-    var uid = response.authResponse.userID;
-    var accessToken = response.authResponse.accessToken;
-		
-	window.location = "http://iforgotorganizer.xyz/Organizer.html"
-  } else if (response.status === 'not_authorized') {
-    window.location = "http://iforgotorganizer.xyz/AboutPage.html"
-  } else {
-    // the user isn't logged in to Facebook.
-  }
- });
 </script>
-<script>
-javascript:getLoginStatus();
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=149476318999373';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+function statusChangeCallback(response) {
+    console.log('statusChangeCallback');
+    console.log(response);
+    // The response object is returned with a status field that lets the
+    // app know the current login status of the person.
+    // Full docs on the response object can be found in the documentation
+    // for FB.getLoginStatus().
+    if (response.status === 'connected') {
+      window.location = "http://iforgotorganizer.xyz/Organizer.html";
+    } else {
+      // The person is not logged into your app or we are unable to tell.
+      document.getElementById('status').innerHTML = 'Please log ' +
+        'into this app.';
+    }
+  }
+function checkLoginState() {
+    FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
+    });
+  }
 </script>
 <!-- Main Container -->
 <div class="container"> 
@@ -59,15 +68,16 @@ javascript:getLoginStatus();
     <h4 class="logo">iForgot</h4>
     </a>
     <nav>
-	<ul></ul>
+  <ul></ul>
     </nav>
   </header>
   <!-- Hero Section -->
   <section class="hero" id="hero">
     <img src="https://raw.githubusercontent.com/IUS-CS/iForgot/master/HackStreetBoyzLogo.PNG" width="544" height="148" alt="TeamLogo"/>
-	<h2 class="hero_header">The Team That <span class="light">Simplifies Life</span></h2>
+  <h2 class="hero_header">The Team That <span class="light">Simplifies Life</span></h2>
   </section>
-<div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="true" data-use-continue-as="false"></div>
+<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button>
  <!-- Copyrights Section -->
   <div class="copyright">&copy;2017 - <strong>All Rights Reserved</strong></div>
 </div>

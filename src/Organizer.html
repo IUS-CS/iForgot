@@ -32,11 +32,8 @@
         }(document));
 
 function logoutSure() {
-    if (confirm("Are you sure you want to logout?") == true) {
     window.location = "http://iforgotorganizer.xyz/LoginPage.html";
     javascript:logout();
-    }
-  
 }
 </script>
 
@@ -48,9 +45,8 @@ function logoutSure() {
     </a>
     <nav>
       <ul>
-        <li> <a href="LoginPage.html">LOGIN</a></li>
         <li><a href="AboutUs.html">ABOUT US</a></li>
-    <li> <a href=javascript:logoutSure();> LOGOUT </a></li>
+    <li> <a href=javascript:logoutSure()> LOGOUT </a></li>
       </ul>
     </nav>
     
